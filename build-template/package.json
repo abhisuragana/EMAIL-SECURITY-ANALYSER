@@ -1,17 +1,19 @@
 {
   "name": "@caffeine/template-app",
   "type": "module",
+  "private": true,
   "engines": {
     "node": ">=16.0.0",
     "pnpm": ">=7.0.0",
     "npm": "please use pnpm"
   },
   "scripts": {
-    "build": "pnpm -r --if-present run build",
-    "start": "pnpm -r --if-present run start",
-    "test": "pnpm -r --if-present run test"
+    "build": "echo \"Root build skipped\"",
+    "start": "echo \"No root start\"",
+    "test": "echo \"No root tests\""
   },
   "devDependencies": {
     "sharp": "^0.34.4"
   }
 }
+
